@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>الكادر التعليمي</title>
+<style>
+  :root{
+    --brand:#1f3d2a;
+    --ring:#d9e5de;
+    --bg:#ffffff;
+    --muted:#65746b;
+    --shadow:0 8px 24px rgba(0,0,0,.08);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#f6faf7;color:#0f1411;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cairo,Arial,sans-serif}
+  .container{max-width:900px;margin:0 auto;padding:14px}
+  .top{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+  a.back{border:1px solid var(--ring);background:#fff;border-radius:12px;padding:10px 12px;color:var(--brand);text-decoration:none;font-weight:800}
+  h1{margin:10px 0 6px;color:var(--brand);font-weight:1000;font-size:clamp(22px,4.5vw,30px)}
+  p.lead{margin:0;color:var(--muted)}
+
+  .grid{margin-top:16px;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+  .card{background:#fff;border:1px solid var(--ring);border-radius:16px;box-shadow:var(--shadow);padding:12px;display:grid;gap:8px}
+  .avatar{height:90px;border-radius:12px;background:linear-gradient(135deg,#f2fff6,#e7f5ec)}
+  .name{font-weight:900;color:var(--brand)}
+  .chip{font-size:12px;color:#2e7d32;background:#e8f5e9;border:1px solid #cfe8d1;border-radius:999px;padding:6px 10px;justify-self:start}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <a class="back" href="index.html">← الرئيسية</a>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:36px;height:36px;border-radius:10px;background:#1f3d2a;display:grid;place-items:center;color:#fff;font-weight:900">ش</div>
+        <b style="color:#501b1b">الكادر التعليمي</b>
+      </div>
+    </div>
+
+    <h1>فريقنا التعليمي</h1>
+    <p class="lead">      .</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="avatar"></div>
+        <div class="name">أ. اسم المعلم</div>
+        <div class="chip">الابتدائي</div>
+        <p style="margin:0;color:#8b3737">نبذة قصيرة عن الخبرات والمؤهلات.</p>
+      </div>
+      <div class="card">
+        <div class="avatar"></div>
+        <div class="name">أ. اسم المعلم</div>
+        <div class="chip">المتوسط</div>
+       <p style="margin:0;color:#8b3737">نبذة قصيرة عن الخبرات والمؤهلات.</p>
+      </div>
+      <div class="card">
+        <div class="avatar"></div>
+        <div class="name">أ. اسم المعلم</div>
+        <div class="chip">الجامعي </div>
+        <p style="margin:0;color:#8b3737">نبذة قصيرة عن الخبرات والمؤهلات.</p>
+      </div>
+      <div class="card">
+        <div class="avatar"></div>
+        <div class="name">أ. اسم المعلم</div>
+        <div class="chip">الثانوي</div>
+        <p style="margin:0;color:#8b3737">نبذة قصيرة عن الخبرات والمؤهلات.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
